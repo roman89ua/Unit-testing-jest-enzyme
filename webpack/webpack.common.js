@@ -1,7 +1,8 @@
-/* eslint @typescript-eslint/no-var-requires: "off" */
+/* eslint @typescript-eslint/no-var-requires: 'off' */
 
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
@@ -21,32 +22,29 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: "asset/resource"
+        type: 'asset/resource',
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/i,
-        type: 'asset/inline'
+        type: 'asset/inline',
       },
     ],
   },
   output: {
     path: path.resolve(__dirname, '..', './build'),
-    filename: "bundle.js",
+    filename: 'bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
+    // TODO copying stuff from dev to prod version of project on build run
+    // new CopyPlugin({
+    //   patterns: [{ from: 'source', to: 'dest' }],
+    // }),
   ],
-}
+};
