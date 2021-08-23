@@ -16,4 +16,4 @@ module.exports = {
     }),
     new ReactRefreshWebpackPlugin(),
   ],
-}
+};
