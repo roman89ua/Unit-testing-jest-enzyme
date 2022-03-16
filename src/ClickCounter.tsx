@@ -5,6 +5,7 @@ export const ClickCounter = () => {
   const countClickHandler = () => {
     setCount(count + 1);
   };
+
   return (
     <div>
       <button onClick={countClickHandler}>Count: {count}</button>
