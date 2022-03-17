@@ -1,7 +1,7 @@
 import React from 'react';
 import { IPost } from './IPost';
 
-const Post = ({ author, created_at, num_comments, title, points, url }: IPost) => (
+export const Post = ({ author, created_at, num_comments, title, points, url }: IPost) => (
   <li className="post">
     <div className="description">
       <a href={url} className="title">
@@ -14,5 +14,3 @@ const Post = ({ author, created_at, num_comments, title, points, url }: IPost) =
     </div>
   </li>
 );
-
-export default Post;

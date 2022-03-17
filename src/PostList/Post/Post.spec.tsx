@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './Post';
+import { Post } from './Post';
 import { shallow, ShallowWrapper } from 'enzyme';
 import { IPost } from './IPost';
 

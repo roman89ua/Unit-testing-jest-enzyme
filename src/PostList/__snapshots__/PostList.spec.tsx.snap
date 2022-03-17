@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post list component should render PostList match rendered snapshot 1`] = `
+<ul>
+  <li />
+  <li
+    class="post"
+  >
+    <div
+      class="description"
+    >
+      <a
+        class="title"
+        href="//test.url"
+      >
+        Jest & Enzyme
+      </a>
+      <span
+        class="text"
+      >
+        100 points
+      </span>
+      <span
+        class="comments"
+      >
+        10 comments
+      </span>
+      <span
+        class="date"
+      >
+        04/05/2020
+      </span>
+      <span
+        class="author"
+      >
+        Roman
+      </span>
+    </div>
+  </li>
+  <li />
+  <li
+    class="post"
+  >
+    <div
+      class="description"
+    >
+      <a
+        class="title"
+        href="//test2121.url"
+      >
+        TypeScript Basics
+      </a>
+      <span
+        class="text"
+      >
+        10 points
+      </span>
+      <span
+        class="comments"
+      >
+        8 comments
+      </span>
+      <span
+        class="date"
+      >
+        06/05/2020
+      </span>
+      <span
+        class="author"
+      >
+        Robert
+      </span>
+    </div>
+  </li>
+  <li />
+  <li
+    class="post"
+  >
+    <div
+      class="description"
+    >
+      <a
+        class="title"
+        href="//test3333.url"
+      >
+        Java Script
+      </a>
+      <span
+        class="text"
+      >
+        25 points
+      </span>
+      <span
+        class="comments"
+      >
+        87 comments
+      </span>
+      <span
+        class="date"
+      >
+        06/05/2020
+      </span>
+      <span
+        class="author"
+      >
+        Kiril
+      </span>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Post list component should render PostList match shallow snapshot 1`] = `
+<ul>
+  <li
+    key="Jest & Enzyme //test.url"
+  >
+    <Post
+      author="Roman"
+      created_at="2020-05-03T23:36:09.816Z"
+      num_comments={10}
+      points={100}
+      title="Jest & Enzyme"
+      url="//test.url"
+    />
+  </li>
+  <li
+    key="TypeScript Basics //test2121.url"
+  >
+    <Post
+      author="Robert"
+      created_at="2020-05-05T23:36:09.816Z"
+      num_comments={8}
+      points={10}
+      title="TypeScript Basics"
+      url="//test2121.url"
+    />
+  </li>
+  <li
+    key="Java Script //test3333.url"
+  >
+    <Post
+      author="Kiril"
+      created_at="2020-05-05T23:36:09.816Z"
+      num_comments={87}
+      points={25}
+      title="Java Script"
+      url="//test3333.url"
+    />
+  </li>
+</ul>
+`;
