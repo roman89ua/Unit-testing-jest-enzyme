@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/no-var-requires: "off" */
 
 const webpack = require('webpack');
-/* BundleAnalyzer can be used to analixe the structure of app but regularly it's not needed */
+/* BundleAnalyzer can be used to analize the structure of app but regularly it's not needed */
 // const BundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
