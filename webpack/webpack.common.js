@@ -1,24 +1,27 @@
-/* eslint @typescript-eslint/no-var-requires: 'off' */
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const CopyPlugin = require('copy-webpack-plugin');
-
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
+
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      components: path.resolve(__dirname, '../src/components'),
+    },
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss'],
   },
   module: {
     rules: [
       {
-        test: /\.(ts|js)x?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
+        test: /\.(js|jsx|ts|tsx)$/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            // disable type checker - we will use it in fork plugin
+            transpileOnly: true,
           },
-        ],
+        },
+        exclude: /(node_modules|bower_components)/,
       },
       {
         test: /\.s[ac]ss$/i,

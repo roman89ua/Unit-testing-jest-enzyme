@@ -2,7 +2,6 @@
 
 exports[`Post list component should render PostList match rendered snapshot 1`] = `
 <ul>
-  <li />
   <li
     class="post"
   >
@@ -28,7 +27,7 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
       <span
         class="date"
       >
-        04/05/2020
+        5/4/2020
       </span>
       <span
         class="author"
@@ -37,7 +36,6 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
       </span>
     </div>
   </li>
-  <li />
   <li
     class="post"
   >
@@ -63,7 +61,7 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
       <span
         class="date"
       >
-        06/05/2020
+        5/6/2020
       </span>
       <span
         class="author"
@@ -72,7 +70,6 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
       </span>
     </div>
   </li>
-  <li />
   <li
     class="post"
   >
@@ -98,7 +95,7 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
       <span
         class="date"
       >
-        06/05/2020
+        5/6/2020
       </span>
       <span
         class="author"
@@ -112,41 +109,32 @@ exports[`Post list component should render PostList match rendered snapshot 1`] 
 
 exports[`Post list component should render PostList match shallow snapshot 1`] = `
 <ul>
-  <li
+  <Post
+    author="Roman"
+    created_at="2020-05-03T23:36:09.816Z"
     key="Jest & Enzyme //test.url"
-  >
-    <Post
-      author="Roman"
-      created_at="2020-05-03T23:36:09.816Z"
-      num_comments={10}
-      points={100}
-      title="Jest & Enzyme"
-      url="//test.url"
-    />
-  </li>
-  <li
+    num_comments={10}
+    points={100}
+    title="Jest & Enzyme"
+    url="//test.url"
+  />
+  <Post
+    author="Robert"
+    created_at="2020-05-05T23:36:09.816Z"
     key="TypeScript Basics //test2121.url"
-  >
-    <Post
-      author="Robert"
-      created_at="2020-05-05T23:36:09.816Z"
-      num_comments={8}
-      points={10}
-      title="TypeScript Basics"
-      url="//test2121.url"
-    />
-  </li>
-  <li
+    num_comments={8}
+    points={10}
+    title="TypeScript Basics"
+    url="//test2121.url"
+  />
+  <Post
+    author="Kiril"
+    created_at="2020-05-05T23:36:09.816Z"
     key="Java Script //test3333.url"
-  >
-    <Post
-      author="Kiril"
-      created_at="2020-05-05T23:36:09.816Z"
-      num_comments={87}
-      points={25}
-      title="Java Script"
-      url="//test3333.url"
-    />
-  </li>
+    num_comments={87}
+    points={25}
+    title="Java Script"
+    url="//test3333.url"
+  />
 </ul>
 `;

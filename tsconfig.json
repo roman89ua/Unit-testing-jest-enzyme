@@ -14,10 +14,20 @@
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
 //    "checkJs": true /* Report errors in .js files. */,
 //    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
 //    "allowJs": true /* Allow javascript files to be compiled. */,
-  },
-  "include": ["src/**/*"]
+"baseUrl": "./src/",
+"paths": {
+  "components/*": [
+    "components/*"
+  ]
+}
+},
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }

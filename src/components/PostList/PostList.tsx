@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Post } from './Post';
 import { IPost } from './Post/IPost';
-import { Post } from './Post/Post';
 
 export const PostList = () => {
   const postsData: IPost[] = [
@@ -33,9 +33,7 @@ export const PostList = () => {
   return (
     <ul>
       {postsData.map((post: IPost) => (
-        <li key={`${post.title} ${post.url}`}>
-          <Post {...post} />
-        </li>
+        <Post {...post} key={`${post.title} ${post.url}`} />
       ))}
     </ul>
   );

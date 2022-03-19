@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './styles.scss';
 import REACT_LOGO from './React-logo.png';
 import REACT_LOGO_SVG from './react-logo.svg';
-import { ClickCounter } from './ClickCounter';
-import { PostList } from './PostList';
+import { ClickCounter } from 'components/ClickCounter';
+import { PostList } from 'components/PostList';
 
 export const App = () => {
   const a = '100';
