@@ -5,10 +5,34 @@ import { ClickCounter } from 'components/ClickCounter';
 import { PostList } from 'components/PostList';
 import { Title } from 'components/Title';
 import './styles.scss';
+import { Select } from 'components/Select';
 
 export const App = () => {
   const a = '100';
   const isDevEnv = process.env.NODE_ENV === 'development';
+  const selectDataOptions = [
+    {
+      label: 'All',
+      value: 0,
+    },
+    {
+      label: 'One',
+      value: 1,
+    },
+    {
+      label: 'Two',
+      value: 2,
+    },
+    {
+      label: 'Three',
+      value: 3,
+    },
+    {
+      label: 'Four',
+      value: 4,
+    },
+  ];
+
   return (
     <div className="centered">
       <Title title={`EDITED react & typescript & webpack - ${process.env.NODE_ENV} ${process.env.name} ${a}`} />
@@ -20,6 +44,13 @@ export const App = () => {
       />
       <ClickCounter />
       <PostList />
+      <Select
+        handleChange={() => {
+          console.log('selct action');
+        }}
+        options={selectDataOptions}
+        defaultValue={selectDataOptions[0].value}
+      />
     </div>
   );
 };
