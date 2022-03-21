@@ -1,16 +1,22 @@
 import React from 'react';
-import { render, ReactWrapper, ShallowWrapper, mount, shallow } from 'enzyme';
+import { ReactWrapper, ShallowWrapper, mount, shallow } from 'enzyme';
 import { Title } from './Title';
 
 describe('<Title /> component shalow rendering', () => {
   const APP_TITLE = 'App Title.';
   let container: ShallowWrapper;
 
-  it('should render one header', () => {
+  beforeEach(() => {
     container = shallow(<Title title={APP_TITLE} />);
+  });
+
+  it('should render one header', () => {
     const header = container?.find('.title-text');
-    console.log(header);
     expect(header).toHaveLength(1);
+  });
+
+  it(`should render ${APP_TITLE} text`, () => {
+    expect(container).toMatchSnapshot();
   });
 });
 
