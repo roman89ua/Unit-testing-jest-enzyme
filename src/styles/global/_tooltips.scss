@@ -1,0 +1,28 @@
+.tooltip {
+  .tooltip-inner {
+    background: $blue-regular;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: $regular;
+    padding: 0.5em 0.6em;
+    @include standard-box-shadow();
+  }
+}
+
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $blue-regular !important;
+}
+.bs-tooltip-auto[x-placement^='top'] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: $blue-regular !important;
+}
+.bs-tooltip-auto[x-placement^='left'] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: $blue-regular !important;
+}
+.bs-tooltip-auto[x-placement^='right'] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: $blue-regular !important;
+}

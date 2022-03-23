@@ -1,0 +1,164 @@
+.modal {
+  transition: opacity 150ms linear, backdrop-filter 500ms linear 300ms;
+
+  .modal-dialog {
+    .modal-content {
+      padding: 2rem;
+      margin: auto;
+      border-radius: 1.5rem;
+
+      .primary {
+        padding: 10px 0;
+      }
+    }
+
+    .modal-title {
+      font-size: 2.2rem;
+    }
+
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+
+    .modal-footer {
+      padding: 0;
+    }
+
+    .close {
+      font-size: 2.6rem;
+      i {
+        font-weight: normal;
+      }
+    }
+
+    &.modal-h-50,
+    &.modal-h-65 {
+      .modal-body {
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+
+    &.modal-h-50 {
+      .modal-body {
+        max-height: 50vh;
+      }
+    }
+    &.modal-h-65 {
+      .modal-body {
+        max-height: 65vh;
+      }
+    }
+  }
+
+  // CLOSING BUTTON STYLES
+  .close-btn {
+    background: white;
+    border: none;
+    outline: none !important;
+    font-size: 36px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .max-vh-44 {
+    max-height: 44vh;
+  }
+
+  .max-vh-60 {
+    max-height: 60vh;
+  }
+}
+
+.modal-open .modal {
+  backdrop-filter: blur(4px);
+}
+
+// BACKGROUND COLOR
+.modal-backdrop {
+  background-color: $blue-regular;
+  cursor: auto;
+}
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 32rem;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+  left: 0px;
+  right: auto;
+}
+
+.modal.left.fade.show .modal-dialog {
+  transform: translateX(0%);
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+  transform: translateX(100%);
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+  right: 0px;
+  left: auto;
+}
+
+.modal.right.fade.show .modal-dialog {
+  transform: translateX(0%);
+}
+
+@media only screen and (max-width: $mobile-size) {
+  .modal-dialog {
+    margin-top: 5px;
+
+    .modal-content {
+      padding: 20px 5px 10px;
+    }
+  }
+}
+
+@media (min-width: $mobile-size) {
+  .modal-dialog {
+    max-width: 615px;
+  }
+}
+
+@media (min-width: $laptop-size) {
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        padding: 3.5rem;
+      }
+    }
+  }
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}

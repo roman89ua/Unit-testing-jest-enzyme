@@ -1,0 +1,35 @@
+// CUSTOM SCROLLBAR
+// ONLY FOR MODERN BROWSERS (use a js library if you require it for older browsers)
+
+//Firefox
+* {
+  scrollbar-color: $blue-regular $gray-light;
+  scrollbar-width: auto;
+}
+
+//Chrome and safari
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: $gray-light;
+  border-radius: 3rem;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #2da8cf 0%, $blue-regular 50%, #043f52 100%);
+  border-radius: 3rem;
+  border: 1px solid $gray-light;
+}
+
+@media (min-width: $laptop-size) {
+  body::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  body *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+}

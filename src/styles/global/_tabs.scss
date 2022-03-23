@@ -1,0 +1,20 @@
+.nav.nav-tabs {
+  .nav-link {
+    color: $gray-bold;
+    border-color: transparent;
+    transition: all 0.3s ease-out;
+    margin-bottom: 0;
+
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: $blue-regular;
+      border-bottom-color: currentColor;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

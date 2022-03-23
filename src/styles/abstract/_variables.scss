@@ -1,0 +1,50 @@
+// TRANSITION
+$standard-transition: all linear 0.3s;
+$medium-transition: all linear 1.3s;
+
+// FONT RELATED
+$fontStack: 'Poppins', Arial, sans-serif;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$letter-spacing: 2px;
+
+// SCREEN SIZES
+$xl-desktop-size: 1600px;
+$desktop-size: 1200px;
+$laptop-size: 992px;
+$tablet-size: 768px;
+$mobile-size: 576px;
+
+// COLORS
+$black: #000;
+$white: #fff;
+
+$gray-light: #fafafa;
+$gray-semilight: #dddddd;
+$gray-regular: #a2a2a2;
+$grey-regular-bold: #999;
+$grey-regular-semibold: #808080;
+$grey-light-primary: #c7c7c7;
+$gray-semibold: #757575;
+$gray-bold: #4a4a4a;
+$grey-silver: #7a7a7a;
+$grey-separator: #d8d8d8;
+$grey-light-secondary: #f7f6f6;
+
+$blue-regular: #127392;
+$blue-primary: #007bff;
+$green-regular: #07815c;
+$green-light: #04aa6d;
+$red-regular: #f15a59;
+$yellow-regular: #fece40;
+
+$error-bg: #fdebeb;
+
+// DROP SHADOW
+@mixin standard-box-shadow($opacity: 0.65) {
+  box-shadow: 1px 1px 7px 0px rgba(117, 117, 117, $opacity);
+}
+
+// OTHER
+$full-height-without-menu: calc(100vh - 110px);

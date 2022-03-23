@@ -1,0 +1,26 @@
+@import '../abstract/variables';
+@import '../bootstrap-theme';
+
+@import './typography';
+@import './layout';
+@import './box-shadows';
+@import './global';
+@import './main';
+@import './custom-scroll-bar';
+@import './collapse';
+@import './tooltips';
+@import './keyframes';
+@import './buttons';
+@import './tabs';
+@import './form-elements';
+@import './modal';
+@import './dropdown';
+@import './icons';
+
+// TODO
+// add widget css/ js to the new project
+// add javascript related to widgets from
+// /Content/src/js/critical/shawcontract.js
+// /Content/src/js/critical/lazyLoadImages.js
+
+// @import "../widgets";

@@ -1,0 +1,63 @@
+$chars: 30, 40, 50, 60, 70, 80, 90;
+
+@each $num in $chars {
+  .max-char-#{$num} {
+    max-width: #{$num}ch;
+  }
+}
+
+.regular {
+  font-weight: $regular;
+}
+.medium {
+  font-weight: $medium;
+}
+.semibold {
+  font-weight: $semibold;
+}
+.heading-1 {
+  font-size: 3.6rem !important;
+}
+.heading-2 {
+  font-size: 2.4rem !important;
+}
+.heading-3 {
+  font-size: 2rem !important;
+}
+.heading-4 {
+  font-size: 1.8rem !important;
+}
+.heading-5 {
+  font-size: 1.6rem !important;
+}
+.text-size-xsmall {
+  font-size: 1.2rem !important;
+}
+.text-size-small {
+  font-size: 1.4rem !important;
+}
+.text-size-normal {
+  font-size: 1.6rem !important;
+}
+.text-size-large {
+  font-size: 1.8rem !important;
+}
+.letter-spacing-normal {
+  letter-spacing: normal !important;
+}
+.letter-spacing-large {
+  letter-spacing: 2px !important;
+}
+.line-height-normal {
+  line-height: 1.6rem !important;
+}
+.line-height-large {
+  line-height: 3.6rem !important;
+}
+.text-transform-none {
+  text-transform: none !important;
+}
+
+.word-break-all {
+  word-break: break-all;
+}

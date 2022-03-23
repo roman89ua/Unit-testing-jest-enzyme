@@ -1,0 +1,131 @@
+html,
+body {
+  font-family: $fontStack !important;
+  font-size: 62.5%;
+  font-weight: $regular;
+  height: 100%;
+  padding-top: 7rem;
+  overflow-x: hidden;
+
+  @media (max-width: $mobile-size) {
+    padding-top: 9rem;
+  }
+}
+
+// HELPERS
+.rounded {
+  border-radius: 0.65rem !important;
+}
+
+.relative-wrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+// COLORS
+.black {
+  color: $black !important;
+}
+.blue-regular {
+  color: $blue-regular !important;
+}
+.gray-light {
+  color: $gray-light !important;
+}
+.gray-semilight {
+  color: $gray-semilight !important;
+}
+.gray-regular {
+  color: $gray-regular !important;
+}
+.grey-regular-semibold {
+  color: $grey-regular-semibold !important;
+}
+.gray-semibold {
+  color: $gray-semibold !important;
+}
+.gray-bold {
+  color: $gray-bold !important;
+}
+.grey-silver {
+  color: $grey-silver;
+}
+.green-regular {
+  color: $green-regular !important;
+}
+.green-light {
+  color: $green-light !important;
+}
+.red-regular {
+  color: $red-regular !important;
+}
+.white {
+  color: $white !important;
+}
+.yellow-regular {
+  color: $yellow-regular !important;
+}
+
+//OPACITY
+$opacities: 0, 3, 5, 7, 8;
+
+@each $o in $opacities {
+  .opacity-#{$o} {
+    opacity: $o / 10;
+  }
+}
+
+// BACKGROUND
+.bg-red-regular {
+  background-color: $red-regular !important;
+}
+.bg-white {
+  background-color: $white !important;
+}
+.bg-green-regular {
+  background-color: $green-regular !important;
+}
+.bg-blue-regular {
+  background-color: $blue-regular !important;
+}
+.bg-yellow-regular {
+  background-color: $yellow-regular !important;
+}
+.bg-gray-light {
+  background-color: $gray-light !important;
+}
+.bg-gray-semilight {
+  background-color: $gray-semilight !important;
+}
+.bg-gray-regular {
+  background-color: $gray-regular !important;
+}
+
+.large-container {
+  width: 100%;
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  color: $blue-regular;
+
+  &:hover {
+    color: $red-regular;
+  }
+}
+
+img[data-object-fit] {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+::selection {
+  background-color: #168eb6;
+  color: white;
+}
