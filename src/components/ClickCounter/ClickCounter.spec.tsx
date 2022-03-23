@@ -1,25 +1,6 @@
 import React from 'react';
 import { ClickCounter } from './ClickCounter';
-import { mount, ReactWrapper, shallow, ShallowWrapper } from 'enzyme';
-
-describe('ClickCounter component rendering', () => {
-  let componentWrapper: ShallowWrapper;
-
-  beforeEach(() => {
-    componentWrapper = shallow(<ClickCounter />);
-  });
-
-  it('should render one button', () => {
-    const button = componentWrapper?.find('button');
-    expect(componentWrapper.exists('button')).toBe(true);
-    expect(button).toHaveLength(1);
-  });
-
-  it('should render button with "Count: 0" text', () => {
-    const button = componentWrapper?.find('button');
-    expect(button.text()).toEqual('Count: 0');
-  });
-});
+import { mount, ReactWrapper } from 'enzyme';
 
 describe('ClickCounter useState hook test', () => {
   let wrapper: ReactWrapper;
