@@ -15,17 +15,20 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
-//    "checkJs": true /* Report errors in .js files. */,
-//    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
-//    "allowJs": true /* Allow javascript files to be compiled. */,
-"baseUrl": "./src/",
-"paths": {
-  "components/*": [
-    "components/*"
-  ]
-}
-},
-  "include": ["src/**/*"],
+    //    "checkJs": true /* Report errors in .js files. */,
+    //    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    //    "allowJs": true /* Allow javascript files to be compiled. */,
+    "baseUrl": "./src/",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    ".eslintrc.js"
+  ],
   "exclude": [
     "node_modules",
     "build"
