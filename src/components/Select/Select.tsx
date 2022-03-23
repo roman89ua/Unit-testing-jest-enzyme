@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.scss';
 import { ISelect } from './types';
+import './styles.scss';
 
 export const Select = ({ handleChange, options, defaultValue }: ISelect) => (
   <div className="select">
