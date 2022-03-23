@@ -16,7 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint-config-airbnb-typescript": "^16.1.4",
     "eslint-import-resolver-node": "^0.3.6",
+    "i": "^0.3.7",
+    "npm": "^8.5.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",

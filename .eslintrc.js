@@ -8,7 +8,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['import', 'react', '@typescript-eslint'],
   extends: ['eslint:recommended', 'airbnb-typescript'],
   rules: {
     'linebreak-style': 'off',
