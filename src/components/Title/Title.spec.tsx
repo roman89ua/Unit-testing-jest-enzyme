@@ -29,6 +29,6 @@ describe('<Title /> component full DOM rendering', () => {
 
   it('should not render any Title component', () => {
     container = mount(<Title title={undefined} />);
-    expect(container?.find('.title').exists()).toBeFalsy;
+    expect(container?.find('.title').exists()).toBeFalsy();
   });
 });

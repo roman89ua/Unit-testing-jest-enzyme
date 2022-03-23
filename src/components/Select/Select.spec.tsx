@@ -30,7 +30,7 @@ describe('Select component', () => {
       },
     ],
   };
-  const setUp = (props: ISelect) => shallow(<Select {...props} />);
+  const setUp = (p: ISelect) => shallow(<Select {...p} />);
   describe('Has props', () => {
     const component = setUp(props);
 

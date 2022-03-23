@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import REACT_LOGO from './images/React-logo.png';
 import REACT_LOGO_SVG from './images/react-logo.svg';
 import { ClickCounter } from 'components/ClickCounter';
@@ -44,13 +44,7 @@ export const App = () => {
       />
       <ClickCounter />
       <PostList />
-      <Select
-        handleChange={() => {
-          console.log('selct action');
-        }}
-        options={selectDataOptions}
-        defaultValue={selectDataOptions[0].value}
-      />
+      <Select handleChange={() => {}} options={selectDataOptions} defaultValue={selectDataOptions[0].value} />
     </div>
   );
 };
