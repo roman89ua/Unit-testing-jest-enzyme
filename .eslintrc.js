@@ -12,7 +12,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['import', 'react', '@typescript-eslint'],
-  extends: ['eslint:recommended', 'airbnb-typescript'],
+  extends: ['airbnb-typescript'],
   rules: {
     'linebreak-style': 'off',
     radix: 'warn',
@@ -40,4 +40,5 @@ module.exports = {
       version: 'detect',
     },
   },
+  ignorePatterns: ['.eslintrc.js'],
 };
