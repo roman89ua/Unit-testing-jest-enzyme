@@ -33,7 +33,6 @@
     ".eslintrc.js",
     "webpack/**/*",
     "jest.config.js",
-    "jest.style__mocks__.js"
   ],
   "exclude": [
     "node_modules",
