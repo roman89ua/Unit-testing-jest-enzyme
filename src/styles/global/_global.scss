@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html,
 body {
   font-family: $fontStack !important;
@@ -74,7 +76,7 @@ $opacities: 0, 3, 5, 7, 8;
 
 @each $o in $opacities {
   .opacity-#{$o} {
-    opacity: $o / 10;
+    opacity: math.div($o, 10);
   }
 }
 

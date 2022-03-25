@@ -1,6 +1,8 @@
 module.exports = {
   env: {
     node: true,
+    browser: true,
+    es2021: true
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -12,7 +14,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['import', 'react', '@typescript-eslint'],
-  extends: ['airbnb-typescript'],
+  extends: ['eslint:recommended', 'airbnb-typescript'],
   rules: {
     'linebreak-style': 'off',
     radix: 'warn',
